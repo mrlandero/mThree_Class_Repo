@@ -6,6 +6,7 @@
 package com.tonyl.loops;
 
 import java.util.Random;
+import java.util.Scanner;
 
 /**
  *
@@ -25,11 +26,23 @@ public class LoopExamples {
         //A while-loop until the random number generated meets the criteria
 //        
         //Counting from 1-5 using a do-while loop:
-        int i = 1;
+//        int i = 1;
+//        
+//        do {
+//            System.out.println(i);
+//            i++;
+//        } while(i < 6); //A do-while loop guarantees that the loop run AT LEAST once
+        
+        Scanner scan = new Scanner(System.in);
+        int userNumber;
+        String userNumberString;
         
         do {
-            System.out.println(i);
-            i++;
-        } while(i < 6); //A do-while loop guarantees that the loop run AT LEAST once
+            System.out.println("Please enter a number between 1 and 20: ");
+            userNumberString = scan.nextLine();
+            userNumber = Integer.parseInt(userNumberString);
+        } while(userNumber < 1 || userNumber > 20);
+        
+        System.out.println("Thank you!!! Your number was: " + userNumber);
     }
 }
