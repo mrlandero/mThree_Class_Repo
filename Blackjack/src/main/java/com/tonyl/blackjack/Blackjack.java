@@ -4,16 +4,12 @@
  * and open the template in the editor.
  */
 package com.tonyl.blackjack;
-import java.util.Scanner;
 
 /**
  *
  * @author Tony Landero
  */
 public class Blackjack {
-    
-    public static Scanner scan = new Scanner(System.in);
-    
     public static void main(String[] args) {
         
     }
